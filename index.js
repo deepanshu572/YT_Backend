@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
     // origin: "http://localhost:5173",
-    origin: [" https://yt-frontend-steel.vercel.app"],
+    origin: ["https://yt-frontend-steel.vercel.app"],
     credentials: true,
   }),
 );
