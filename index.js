@@ -24,6 +24,7 @@ app.use(
     credentials: true,
   })
 );
+await connectDb();
 app.use("/api/auth", authRouter);
 app.use("/api/users", userRouter);
 app.use("/api/upload", uploadRouter);
@@ -37,7 +38,7 @@ app.get("/", (req, res) => {
   res.send("done");
 });
 
-app.listen(port, async () => {
-  console.log("server started");
-  await connectDb();
-});
+// app.listen(port, async () => {
+//   console.log("server started");
+//   await connectDb();
+// });
