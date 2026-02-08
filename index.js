@@ -43,3 +43,7 @@ app.get("/", (req, res) => {
 //   console.log("server started");
 //   await connectDb();
 // });
+
+
+
+export default app;
